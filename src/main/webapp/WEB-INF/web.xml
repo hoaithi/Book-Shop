@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="https://jakarta.ee/xml/ns/jakartaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/web-app_6_0.xsd"
+         version="6.0">
+    <servlet>
+        <servlet-name>RegisterController</servlet-name>
+        <servlet-class>com.hoaithidev.bookstore.controller.RegisterController</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>RegisterController</servlet-name>
+        <url-pattern>/register</url-pattern>
+    </servlet-mapping>
+
+
+<!--    LoginController-->
+    <servlet>
+        <servlet-name>LoginController</servlet-name>
+        <servlet-class>com.hoaithidev.bookstore.controller.LoginController</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>LoginController</servlet-name>
+        <url-pattern>/login</url-pattern>
+    </servlet-mapping>
+
+    <!--    BookController-->
+    <servlet>
+        <servlet-name>BookController</servlet-name>
+        <servlet-class>com.hoaithidev.bookstore.controller.BookController</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>BookController</servlet-name>
+        <url-pattern>/book</url-pattern>
+    </servlet-mapping>
+</web-app>
